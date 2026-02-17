@@ -184,3 +184,6 @@ if __name__ == "__main__":
 
     except ResearchAnalystException as e:
         log.error("Critical failure in ModelLoader test", error=str(e))
+        
+        
+# Write a clean, enterprise-grade Python module for dynamic model loading in a structured AI backend system. The system must follow clean architecture principles and separate API key management, configuration loading, and model initialization logic. Use environment variables and YAML configuration to determine which LLM provider to load. Support OpenAI, Google Gemini, and Groq chat models. Include structured logging at every stage, avoid exposing secrets, ensure async loop safety for gRPC-based embedding APIs, and wrap all failures using a custom domain exception class. Provide complete documentation, comments, error handling, and a standalone test block for local validation.
